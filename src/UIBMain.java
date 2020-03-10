@@ -1,15 +1,32 @@
+import java.util.Scanner;
 
 public class UIBMain {
 
 	public static void main(String[] args) {
-		Conta ct1 = new Conta();
+		
+		Scanner leTeclado = new Scanner(System.in);
+		final int TOTAL_CLIENTE = 2;
+		Cliente [] clientes = new cliente[TOTAL_CLIENTE];
+	
+		System.out.println("*******SEJA BEM-VINDO*******");
+		System.out.println("--------- UIIB BANK---------");
 		
 		
-		ct1.cliente = new Cliente("Arthur" ," 0001");
-		ct1.numero = 0001;
-		ct1.saldo = 100.00;
+		int i;
+		for (i=0; i<2; i++) {
+			System.out.println("DIGITE O NOME");
+			clientes[i].setNome(leTeclado.next);
+			
+		}
 		
-		ct1.status();
-	}
+		for (i=0; i<2; i++) {
+			
+			
+		}
+		
+		
+		
+		
+		
 
 }
